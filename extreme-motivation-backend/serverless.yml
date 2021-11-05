@@ -22,6 +22,8 @@ provider:
     tableName: ${self:custom.tableName}
     stripeSecretKey: ${env:STRIPE_SECRET_KEY}
     region: ${self:custom.region}
+    pieceRotationIntervalSeconds: 86400
+    pieceRotationPointInTimeSecondsFromMidnight: 0
   iam:
     role:
       statements:

@@ -25,9 +25,9 @@ export const Schema: OneSchema = {
             piece_pk: {type: String, required: true},
             visitor_id: {type: String}
         },
-        PieceSelectionLog: {
-            pk: {type: String, value: 'pieceSelectionLog:${piece_pk}#${date}'},
-            sk: {type: String, value: 'pieceSelectionLog:${from}#${until}'},
+        PieceSelectionLog: { //
+            pk: {type: String, value: 'pieceSelectionLog:${piece_pk}#${from}'},
+            sk: {type: String, value: 'pieceSelectionLog:${until}'},
             piece_pk: {type: String, required: true},
             uuid: {type: String, required: true, uuid: true},
             from: {type: Date, required: true},
