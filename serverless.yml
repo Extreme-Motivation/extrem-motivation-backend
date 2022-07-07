@@ -2,7 +2,9 @@ org: mixermachine
 app: extreme-motivation-backend
 service: extreme-motivation-backend
 
-frameworkVersion: '2'
+frameworkVersion: '3'
+
+useDotenv: true
 
 custom:
   stage: ${opt:stage, self:provider.stage}
@@ -57,5 +59,4 @@ functions:
 
 plugins:
   - serverless-plugin-typescript
-  - serverless-dynamodb-local
   - serverless-offline

@@ -1,7 +1,38 @@
-# extrem-motivation-backend
+# Serverless Framework Node with Typescript HTTP API on AWS
 
-Build with AWS Lambda and AWS DynamoDB.\
-AWS DynamoDB is used in a single DB approach here and offers great performance when it comes to processing a lot of data
-from users.
+This template demonstrates how to make a simple HTTP API with Node.js and Typescript running on AWS Lambda and API
+Gateway using the Serverless Framework v1.
 
-Good read: https://serverless-stack.com/chapters/deploy-your-serverless-infrastructure.html
+This template does not include any kind of persistence (database). For more advanced examples, check out
+the [serverless/examples repository](https://github.com/serverless/examples) which includes Typescript, Mongo, DynamoDB
+and other examples.
+
+## Setup
+
+Run this command to initialize a new project in a new working directory.
+
+```
+npm install
+```
+
+## Usage
+
+**Deploy**
+
+```
+$ serverless deploy
+```
+
+**Invoke the function locally.**
+
+```
+serverless invoke local --function hello
+```
+
+**Invoke the function**
+
+```
+curl https://xxxxxxxxx.execute-api.us-east-1.amazonaws.com/
+```
+
+
